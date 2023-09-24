@@ -4,12 +4,13 @@ if not status_ok then
 end
 
 nvim_tree.setup {
+  sort_by = "case_sensitive",
   update_focused_file = {
-    enable = true,
-    update_cwd = true,
+    -- enable = true,
+    --update_cwd = true,
   },
   renderer = {
-    root_folder_modifier = ":t",
+    -- root_folder_modifier = ":t",
   },
   diagnostics = {
     enable = true,
