@@ -48,6 +48,7 @@ return packer.startup(function(use)
 	-- Colorschemes
   -- use "folke/tokyonight.nvim"
   use "lunarvim/darkplus.nvim"
+  use "bluz71/vim-nightfly-colors"
 
 	-- Cmp 
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -80,6 +81,9 @@ return packer.startup(function(use)
 
   -- Treesitter
 	use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+
+  -- gitsigns
+  use "lewis6991/gitsigns.nvim"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
