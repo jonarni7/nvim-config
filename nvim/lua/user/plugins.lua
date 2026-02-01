@@ -85,6 +85,25 @@ return packer.startup(function(use)
   -- gitsigns
   use "lewis6991/gitsigns.nvim"
 
+  -- Avavnte 
+  use {
+      "yetone/avante.nvim",
+      build = "make BUILD_FROM_SOURCE=true",
+      lazy = false,
+      version = false,
+      BUILD_FROM_SOURCE = true,
+      run = "make",
+      requires = {
+        "nvim-treesitter/nvim-treesitter",
+        "stevearc/dressing.nvim",
+        "nvim-lua/plenary.nvim",
+        "MunifTanjim/nui.nvim",
+        --- The below dependencies are optional,
+        "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
+        "HakonHarnes/img-clip.nvim",
+      },
+    }
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
